@@ -8,7 +8,7 @@ class CreateUserSchema(Schema):
 
 
 class UserSchema(CreateUserSchema):
-    id = fields.UUID(required=True)
+    id = fields.UUID(required=True, attribute="id_")
 
 
 class GetUserRequestSchema(Schema):
